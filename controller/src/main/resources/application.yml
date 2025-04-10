@@ -1,0 +1,7 @@
+spring:
+  application.name: controller
+  cloud:
+    stream:
+      bindings:
+        sendMessage-out-0:
+          destination: raw-message

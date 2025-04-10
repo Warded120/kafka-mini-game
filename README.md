@@ -1,5 +1,5 @@
 
-Message {
+RawMessage {
     message: ""
 }
 
