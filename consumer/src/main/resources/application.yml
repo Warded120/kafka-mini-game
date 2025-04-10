@@ -1,5 +1,11 @@
+logging:
+  level:
+    root: OFF
+    org.springframework: OFF
+    org.apache.kafka: OFF
+
 server:
-  port: 8080
+  port: 8082
 
 spring:
   application.name: consumer
@@ -8,8 +14,3 @@ spring:
       kafka:
         binder:
           brokers: localhost:9092
-logging:
-  level:
-    root: OFF
-    org.springframework: OFF
-    org.apache.kafka: OFF

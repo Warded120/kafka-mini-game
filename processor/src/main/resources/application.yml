@@ -1,3 +1,6 @@
+server:
+  PORT: 8081
+
 spring:
   application.name: processor
   cloud:

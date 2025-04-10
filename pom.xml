@@ -14,7 +14,6 @@
     <description>kafka-mini-game</description>
 
     <modules>
-        <module>client</module>
         <module>consumer</module>
         <module>controller</module>
         <module>processor</module>

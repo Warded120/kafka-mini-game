@@ -10,6 +10,6 @@ public class KafkaMessageConsumer {
     public void consume(Message message) {
         System.out.println(message.username()
                 + ": " + message.message()
-                + "(" + message.timestamp() + ")");
+                + " (" + message.timestamp() + ")");
     }
 }
