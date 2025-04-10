@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  application.name: consumer
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
