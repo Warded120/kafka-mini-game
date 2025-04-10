@@ -20,11 +20,12 @@ public class ProcessorApplication {
 
 	@Bean
 	public Function<RawMessage, Message> enhanceMessage() {
-		return rawMessage -> {
-			System.out.println("Enhancing Message: " + rawMessage);
-			Message message = new Message(idCounter++, rawMessage.message(), Timestamp.valueOf(LocalDateTime.now()));
-			System.out.println("Message: " + message);
-			return message;
-		};
+		return rawMessage ->
+			new Message(
+				idCounter++,
+				rawMessage.username(),
+				rawMessage.message(),
+				Timestamp.valueOf(LocalDateTime.now())
+			);
 	}
 }
