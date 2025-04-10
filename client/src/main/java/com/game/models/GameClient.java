@@ -1,4 +1,4 @@
-package com.game.client;
+package com.game.models;
 
 import java.io.IOException;
 import java.net.URI;
@@ -22,6 +22,7 @@ public class GameClient {
 
     try {
       client.send(sendRequest, BodyHandlers.ofString());
+      System.out.println("Sent message");
     } catch (IOException | InterruptedException exception) {
       System.out.println("something has gone wrong during request!");
       exception.printStackTrace();

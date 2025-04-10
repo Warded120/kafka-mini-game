@@ -6,10 +6,9 @@
         <artifactId>kafka-mini-game</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>client</artifactId>
-    <name>Archetype - client</name>
+    <artifactId>models</artifactId>
+    <name>Archetype - models</name>
     <url>http://maven.apache.org</url>
-
     <build>
         <plugins>
             <plugin>

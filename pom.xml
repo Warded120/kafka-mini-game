@@ -17,6 +17,7 @@
         <module>client</module>
         <module>controller</module>
         <module>processor</module>
+        <module>models</module>
     </modules>
 
     <properties>
@@ -33,17 +34,4 @@
             <scope>import</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>${spring.boot.version}</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
-
 </project>

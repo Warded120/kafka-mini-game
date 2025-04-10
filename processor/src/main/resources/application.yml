@@ -1,10 +1,13 @@
 spring:
-  application.name: controller
+  application.name: processor
   cloud:
     stream:
       bindings:
-        sendMessage-out-0:
+        enhanceMessage-in-0:
           destination: raw-message
+          group: kafka-mini-game
+        enhanceMessage-out-0:
+          destination: message
           group: kafka-mini-game
       kafka:
         binder:
